@@ -1,0 +1,14 @@
+<!DOCTYPE AFC>
+<algorithm version="1.2">
+  <branch>
+    <io vars="n"/>
+    <assign dest="s" src="0"/>
+    <for to="n" var="i" from="1">
+      <branch>
+        <io vars="x"/>
+        <assign dest="s" src="s + x"/>
+      </branch>
+    </for>
+    <ou vars="s / n"/>
+  </branch>
+</algorithm>

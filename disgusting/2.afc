@@ -1,0 +1,10 @@
+<!DOCTYPE AFC>
+<algorithm version="1.2">
+  <branch>
+    <io vars="x"/>
+    <assign dest="x" src="x * x"/>
+    <assign dest="x" src="x * x"/>
+    <assign dest="x" src="x * x"/>
+    <ou vars="x"/>
+  </branch>
+</algorithm>

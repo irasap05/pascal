@@ -1,0 +1,26 @@
+<!DOCTYPE AFC>
+<algorithm version="1.2">
+  <branch>
+    <io vars="x,y,z,w"/>
+    <assign dest="m" src="x"/>
+    <if cond="y > m">
+      <branch>
+        <assign dest="m" src="y"/>
+      </branch>
+      <branch/>
+    </if>
+    <if cond="z > m">
+      <branch>
+        <assign dest="m" src="z"/>
+      </branch>
+      <branch/>
+    </if>
+    <if cond="w > m">
+      <branch>
+        <assign dest="m" src="w"/>
+      </branch>
+      <branch/>
+    </if>
+    <ou vars="m"/>
+  </branch>
+</algorithm>
