@@ -3,8 +3,8 @@
   symbol : char;
   
 begin
-  read(height);
-  symbol := 'o';
+  readln(height);
+  readln(symbol);
   maxLength := 2 * height - 1;
   width := (maxLength - 1) div 2;
   amountOfSymbols := 1;
