@@ -1,10 +1,7 @@
-﻿var
-  amountOfSpace, amountOfSymbols, height, width, maxLength: integer;
-  symbol : char;
-  
+﻿procedure pyramid(height: integer; symbol: char);
+var
+  amountOfSpace, amountOfSymbols, width, maxLength: integer;
 begin
-  readln(height);
-  readln(symbol);
   maxLength := 2 * height - 1;
   width := (maxLength - 1) div 2;
   amountOfSymbols := 1;
@@ -14,4 +11,13 @@ begin
     width -= 1;
     amountOfSymbols += 2;
   end;
+end;
+  
+var
+  h: integer;
+  s: char;
+begin
+  readln(h);
+  readln(s);
+  pyramid(h, s);  
 end.
