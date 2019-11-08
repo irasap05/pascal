@@ -7,7 +7,7 @@ begin
 end;
 
 var
-  a, b, c, d, r: integer;
+  a, b, c, d: integer;
   flag: boolean;
 
 begin
