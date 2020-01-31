@@ -1,5 +1,5 @@
 ﻿const
-  n = 10;
+  n = 5;
 
 var
   a: array[1..n] of integer;
@@ -23,7 +23,7 @@ begin
   min := 2147483647;
   indexOfLastMin := -1;
   for i := 1 to n do
-    if a[i] < min then
+    if a[i] <= min then
     begin
       min := a[i];
       indexOfLastMin := i;
